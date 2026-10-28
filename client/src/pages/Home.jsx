@@ -78,7 +78,11 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1, duration: 0.7 }}
           >
+<<<<<<< HEAD
             Hi, I'm <span className="grad-text">{profile.name}</span>
+=======
+            Hi, I'm <span className="grad-text">{profile.firstName}</span>
+>>>>>>> c639ec66f38459a8856259170079e359d7904187
             <br />
             <Typewriter words={profile.roles} />
           </motion.h1>
@@ -338,7 +342,11 @@ export default function Home() {
           {profile.testimonials.map((t, i) => (
             <Reveal key={i} delay={i * 0.1}>
               <SpotlightCard className="testimonial-card">
+<<<<<<< HEAD
                 <div style={{ color: 'var(--a)', fontSize: '2rem', lineHeight: 1 }}>ï¿½</div>
+=======
+                <div style={{ color: 'var(--a)', fontSize: '2rem', lineHeight: 1 }}>“</div>
+>>>>>>> c639ec66f38459a8856259170079e359d7904187
                 <p className="testimonial-quote">{t.quote}</p>
                 <div className="testimonial-author">
                   <div className="author-avatar">{t.author.charAt(0)}</div>
